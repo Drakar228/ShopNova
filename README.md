@@ -26,7 +26,7 @@ The whole thing is built with real technologies used in production: Spring Boot,
 ## Tech Stack
 
 | Technology | Why It's Here |
-| --- | --- |
+
 | **Spring Boot 3.2** | Main framework. Handles routing, dependency injection, and configuration without XML files. |
 | **Spring Security 6** | Authentication, authorization, and BCrypt password hashing. |
 | **Spring Data JPA / Hibernate** | Maps Java objects to MySQL tables automatically. No manual SQL. |
@@ -90,18 +90,18 @@ KPI cards showing live business metrics, revenue chart, order management with st
 Six tables, all created automatically by Hibernate:
 
 | Table | What It Does |
-| --- | --- |
+
 | **users** | Registered accounts with BCrypt hashed passwords and role-based access (USER or ADMIN) |
 | **products** | 20 smart glasses products with specs, pricing, stock, and Unsplash image URLs |
 | **carts** | One row per user. Links them to their persistent shopping cart. |
 | **cart_items** | Individual items in a cart with quantities. Increments quantity instead of creating duplicates. |
 | **orders** | Orders with SN-YYYYMMDD-XXXX format numbers, shipping address, status, and tracking. |
-| **order_items** | Snapshot of what was in the cart at purchase. Stores unit_price so price changes don't affect historical orders. |
+| **order_items** | Snapshot of what was in the cart at purchase. Stores unit price so price changes don't affect historical orders. |
 
 ## Security
 
 - **URL Access Control**: Spring Security blocks unauthorized access. Regular users can't guess their way into admin pages.
-- **Password Hashing**: BCrypt with cost factor 12. Takes ~250ms to compute, making brute force attacks expensive.
+- **Password Hashing**: BCrypt with cost factor 12. Takes 250ms to compute, making brute force attacks expensive.
 - **CSRF Protection**: Enabled on all forms.
 - **Session Management**: Max one active session per user. Logging in on a second device invalidates the first.
 
