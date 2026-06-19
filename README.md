@@ -40,11 +40,11 @@ The whole thing is built with real technologies used in production: Spring Boot,
 
 The application follows a clean 3-layer MVC architecture:
 
-- **Controller Layer** — Handles HTTP requests. Never contains business logic or database code.
-- **Service Layer** — All business logic lives here. Filtering products, calculating cart totals, managing orders.
-- **Repository Layer** — Talks to the database. Spring Data JPA turns method signatures into SQL queries automatically.
-- **Model Layer** — Plain Java entity classes. Hibernate reads the annotations and creates MySQL tables.
-- **Templates** — Thymeleaf HTML files. Server fills in the live data before sending to the browser.
+- **Controller Layer**: Handles HTTP requests. Never contains business logic or database code.
+- **Service Layer**: All business logic lives here. Filtering products, calculating cart totals, managing orders.
+- **Repository Layer**: Talks to the database. Spring Data JPA turns method signatures into SQL queries automatically.
+- **Model Layer**: Plain Java entity classes. Hibernate reads the annotations and creates MySQL tables.
+- **Templates**: Thymeleaf HTML files. Server fills in the live data before sending to the browser.
 
 ## Features in Action
 
@@ -56,7 +56,7 @@ Landing page with hero section, category guides, featured products, and brand lo
 ### Shop with Filters
 Full sidebar with category filter, price range slider, brand filter, and sort options. All server-side filtering, so filtered views are bookmarkable.
 
-![Shop Page](shopnova_images/image2.png)
+![Shop Page]([shopnova_images/image2.png](https://github.com/Drakar228/ShopNova/blob/main/image1.png))
 
 ### Product Details
 Full specifications table, pricing with discount badges, QR code panel that actually works, and stock-aware Add to Cart button.
