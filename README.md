@@ -51,12 +51,12 @@ The application follows a clean 3-layer MVC architecture:
 ### Home Page
 Landing page with hero section, category guides, featured products, and brand logos. Designed to look premium, not generic.
 
-![Home Page](shopnova_images/image1.png)
+![Home Page](image1.png)
 
 ### Shop with Filters
 Full sidebar with category filter, price range slider, brand filter, and sort options. All server-side filtering, so filtered views are bookmarkable.
 
-![Shop Page](image1.png)
+![Shop Page]()
 
 ### Product Details
 Full specifications table, pricing with discount badges, QR code panel that actually works, and stock-aware Add to Cart button.
@@ -73,7 +73,7 @@ Clean login and registration pages with BCrypt password hashing. No demo credent
 ### Shopping Cart
 Persistent session-based cart with quantity controls, line totals, and sticky order summary. Shows shipping cost calculation.
 
-![Shopping Cart](shopnova_images/image6.png)
+![Shopping Cart](image2.png)
 
 ### Order Tracking
 Customers can see their complete purchase history with status badges, items purchased, totals, shipping address, and tracking numbers.
