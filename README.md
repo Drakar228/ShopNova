@@ -56,7 +56,7 @@ Landing page with hero section, category guides, featured products, and brand lo
 ### Shop with Filters
 Full sidebar with category filter, price range slider, brand filter, and sort options. All server-side filtering, so filtered views are bookmarkable.
 
-![Shop Page]([shopnova_images/image2.png](https://github.com/Drakar228/ShopNova/blob/main/image1.png))
+![Shop Page](image1.png)
 
 ### Product Details
 Full specifications table, pricing with discount badges, QR code panel that actually works, and stock-aware Add to Cart button.
