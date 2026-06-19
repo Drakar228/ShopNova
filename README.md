@@ -56,7 +56,7 @@ Landing page with hero section, category guides, featured products, and brand lo
 ### Shop with Filters
 Full sidebar with category filter, price range slider, brand filter, and sort options. All server-side filtering, so filtered views are bookmarkable.
 
-![Shop Page]()
+![Shop Page](image2.png)
 
 ### Product Details
 Full specifications table, pricing with discount badges, QR code panel that actually works, and stock-aware Add to Cart button.
@@ -73,7 +73,7 @@ Clean login and registration pages with BCrypt password hashing. No demo credent
 ### Shopping Cart
 Persistent session-based cart with quantity controls, line totals, and sticky order summary. Shows shipping cost calculation.
 
-![Shopping Cart](image2.png)
+![Shopping Cart]()
 
 ### Order Tracking
 Customers can see their complete purchase history with status badges, items purchased, totals, shipping address, and tracking numbers.
