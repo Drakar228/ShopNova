@@ -1,6 +1,6 @@
 # ShopNova - Smart Glasses E-Commerce Platform
 
-ShopNova is a full-stack e-commerce application built for the smart glasses market. It's not a generic shopping site — we specialized in one genuinely exciting product category: smart eyewear. We're talking Meta Ray-Ban glasses, Apple Vision Pro, AR glasses from companies like Xreal and Microsoft HoloLens, and audio eyewear from Bose and Amazon.
+ShopNova is a full-stack e-commerce application built for the smart glasses market. It's not a generic shopping site; we specialize in one genuinely exciting product category: smart eyewear. We're talking Meta Ray-Ban glasses, Apple Vision Pro, AR glasses from companies like Xreal and Microsoft HoloLens, and audio eyewear from Bose and Amazon.
 
 The whole thing is built with real technologies used in production: Spring Boot, MySQL, Thymeleaf, and Spring Security. It's a working platform, not a mock-up. Users can browse, filter products, manage carts, place orders, and track them. Admins get a full dashboard with business metrics and inventory management.
 
@@ -12,7 +12,7 @@ The whole thing is built with real technologies used in production: Spring Boot,
 - View detailed product specs (battery life, display type, connectivity, weight, etc.)
 - Add products to a persistent shopping cart
 - Create an account with secure BCrypt password hashing
-- Checkout and place orders with shipping info
+- Check out and place orders with shipping info
 - Track your order history with status updates and tracking numbers
 - Scan QR codes on product pages to open them on your phone
 
@@ -44,7 +44,7 @@ The application follows a clean 3-layer MVC architecture:
 - **Service Layer**: All business logic lives here. Filtering products, calculating cart totals, managing orders.
 - **Repository Layer**: Talks to the database. Spring Data JPA turns method signatures into SQL queries automatically.
 - **Model Layer**: Plain Java entity classes. Hibernate reads the annotations and creates MySQL tables.
-- **Templates**: Thymeleaf HTML files. Server fills in the live data before sending to the browser.
+- **Templates**: Thymeleaf HTML files. The server fills in the live data before sending to the browser.
 
 ## Features in Action
 
@@ -100,22 +100,22 @@ Six tables, all created automatically by Hibernate:
 
 ## Security
 
-- **URL Access Control** — Spring Security blocks unauthorized access. Regular users can't guess their way into admin pages.
-- **Password Hashing** — BCrypt with cost factor 12. Takes ~250ms to compute, making brute force attacks expensive.
-- **CSRF Protection** — Enabled on all forms.
-- **Session Management** — Max one active session per user. Login on a second device invalidates the first.
+- **URL Access Control**: Spring Security blocks unauthorized access. Regular users can't guess their way into admin pages.
+- **Password Hashing**: BCrypt with cost factor 12. Takes ~250ms to compute, making brute force attacks expensive.
+- **CSRF Protection**: Enabled on all forms.
+- **Session Management**: Max one active session per user. Logging in on a second device invalidates the first.
 
 ## The Product Catalogue
 
 20 real products across 4 categories:
 
-**Meta Glasses** — Ray-Ban Wayfarer, Headliner, and Standard versions
+**Meta Glasses**: Ray-Ban Wayfarer, Headliner, and Standard versions
 
-**VR Headsets** — Quest 3/3S, Apple Vision Pro, Samsung Galaxy XR, PlayStation VR2
+**VR Headsets**: Quest 3/3S, Apple Vision Pro, Samsung Galaxy XR, PlayStation VR2
 
-**AR Glasses** — Xreal Air 2 Ultra, Google Glass Enterprise 2, Microsoft HoloLens 2, Vuzix Blade, and more
+**AR Glasses**: Xreal Air 2 Ultra, Google Glass Enterprise 2, Microsoft HoloLens 2, Vuzix Blade, and more
 
-**Audio Glasses** — Bose Frames, Amazon Echo Frames, Huawei EyeWear, Fauna Audio
+**Audio Glasses**: Bose Frames, Amazon Echo Frames, Huawei EyeWear, Fauna Audio
 
 Every product includes real Unsplash photos, accurate pricing, and genuine technical specs. The price range goes from ~$100 for audio glasses to $3,499 for the Apple Vision Pro, which makes the filtering system actually useful.
 
@@ -152,11 +152,11 @@ Customer account: `sara@example.com` / `User@123`
 
 The whole codebase follows SOLID principles:
 
-- **Single Responsibility** — Controllers handle HTTP. Repositories handle queries. Services handle logic. No mixing.
-- **Open/Closed** — Adding new filters doesn't touch existing filter code.
-- **Dependency Inversion** — Everything is injected. Easy to swap implementations.
-- **Interface-based** — All repositories are interfaces. Spring Data generates implementations automatically.
-- **Defense in Depth** — Security is built in at multiple layers, not just one place.
+- **Single Responsibility**: Controllers handle HTTP. Repositories handle queries. Services handle logic. No mixing.
+- **Open/Closed**: Adding new filters doesn't touch existing filter code.
+- **Dependency Inversion**: Everything is injected. Easy to swap implementations.
+- **Interface-based**: All repositories are interfaces. Spring Data generates implementations automatically.
+- **Defense in Depth**: Security is built in at multiple layers, not just one place.
 
 ## What Went Well
 
@@ -164,7 +164,7 @@ Switching from H2 to MySQL was the right call. It forces you to think about real
 
 The product catalogue with 20 real products and accurate specs makes every feature feel meaningful. Testing filters with a $299 Meta Ray-Ban next to a $3,499 Apple Vision Pro makes the price slider actually useful.
 
-The QR code feature works end to end. Scan the code on a product page and it opens on your phone. That's a real-world detail.
+The QR code feature works end to end. Scan the code on a product page, and it opens on your phone. That's a real-world detail.
 
 Replacing emoji icons with inline SVGs completely changed the look. This looks like a professional product, not assembled from Unicode.
 
@@ -179,35 +179,4 @@ Product images come from Unsplash URLs directly. Production would self-host or u
 ## Code Structure
 
 ```
-com.shopnova
-├── ShopNovaApplication.java          Main entry point
-├── config/
-│   ├── SecurityConfig.java           URL access rules, session config
-│   └── DataSeeder.java               Populates database on startup
-├── controller/
-│   ├── ShopController.java           Browse, filter, search
-│   ├── ProductController.java        Product detail pages
-│   ├── CartController.java           Cart operations
-│   ├── OrderController.java          Checkout and order tracking
-│   ├── AuthController.java           Login and registration
-│   └── AdminController.java          Admin dashboard
-├── model/
-│   ├── User.java
-│   ├── Product.java
-│   ├── Cart.java
-│   ├── CartItem.java
-│   ├── Order.java
-│   └── OrderItem.java
-├── repository/
-│   ├── UserRepository.java
-│   ├── ProductRepository.java
-│   ├── CartRepository.java
-│   ├── OrderRepository.java
-│   └── OrderItemRepository.java
-└── service/
-    └── CustomUserDetailsService.java  Spring Security integration
-```
 
-## License
-
-This is an academic project built as part of Unit 21: Applied Programming and Design Principles.
