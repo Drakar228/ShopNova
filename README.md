@@ -61,14 +61,14 @@ Full sidebar with category filter, price range slider, brand filter, and sort op
 ### Product Details
 Full specifications table, pricing with discount badges, QR code panel that actually works, and stock-aware Add to Cart button.
 
-![Product Detail](shopnova_images/image3.png)
+![Product Detail](image3.png)
 
 ### Authentication
 Clean login and registration pages with BCrypt password hashing. No demo credentials exposed.
 
-![Sign In](shopnova_images/image4.png)
+![Sign In](image4.png)
 
-![Registration](shopnova_images/image5.png)
+![Registration](image5.png)
 
 ### Shopping Cart
 Persistent session-based cart with quantity controls, line totals, and sticky order summary. Shows shipping cost calculation.
@@ -78,12 +78,12 @@ Persistent session-based cart with quantity controls, line totals, and sticky or
 ### Order Tracking
 Customers can see their complete purchase history with status badges, items purchased, totals, shipping address, and tracking numbers.
 
-![My Orders](shopnova_images/image7.png)
+![My Orders](image7.png)
 
 ### Admin Dashboard
 KPI cards showing live business metrics, revenue chart, order management with status dropdowns, and full product inventory with stock level indicators.
 
-![Admin Dashboard](shopnova_images/image8.png)
+![Admin Dashboard](image8.png)
 
 ## Database Design
 
