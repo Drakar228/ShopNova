@@ -81,7 +81,7 @@ Customers can see their complete purchase history with status badges, items purc
 ![My Orders](image7.png)
 
 ### Admin Dashboard
-KPI cards showing live business metrics, revenue chart, order management with status dropdowns, and full product inventory with stock level indicators.
+KPI cards showing live business metrics, a revenue chart, order management with status dropdowns, and full product inventory with stock level indicators.
 
 ![Admin Dashboard](image8.png)
 
@@ -160,7 +160,7 @@ The whole codebase follows SOLID principles:
 
 ## What Went Well
 
-Switching from H2 to MySQL was the right call. It forces you to think about real persistence, configuration, and what happens between restarts — all production concerns.
+Switching from H2 to MySQL was the right call. It forces you to think about real persistence, configuration, and what happens between restarts all production concerns.
 
 The product catalogue with 20 real products and accurate specs makes every feature feel meaningful. Testing filters with a $299 Meta Ray-Ban next to a $3,499 Apple Vision Pro makes the price slider actually useful.
 
